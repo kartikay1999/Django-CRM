@@ -1,0 +1,4 @@
+ python manage.py runserver         
+ python manage.py startapp leads     
+ python manage.py makemigrations     │
+ python manage.py migrate

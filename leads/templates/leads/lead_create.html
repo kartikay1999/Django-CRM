@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+        <a href="{% url 'leads:lead-list' %}">Go back to leads</a>
+        <hr>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Create a new lead </h1>
+        <form method="POST" action=".">
+            {% csrf_token %}
+            {{form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+        <script src="" async defer></script>
+    {%endblock content %}
